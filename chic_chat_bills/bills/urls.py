@@ -10,4 +10,4 @@ urlpatterns = [
     path('', views.bill_list, name='bill_list'),
     path('bill/<int:bill_id>/', views.bill_detail, name='bill_detail'),
 ]
-]
+
