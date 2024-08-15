@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Detail</title>
+</head>
+<body>
+    <h1>Bill Detail</h1>
+    <p><strong>Name:</strong> {{ bill.name }}</p>
+    <p><strong>Description:</strong> {{ bill.description }}</p>
+    <p><strong>Price:</strong> ${{ bill.price }}</p>
+    <p><strong>Number of Splits:</strong> {{ bill.number_of_splits }}</p>
+    <p><strong>Price Per Split:</strong> ${{ bill.price_per_split }}</p>
+    <a href="{% url 'bill_list' %}">Back to Bill List</a>
+</body>
+</html>
