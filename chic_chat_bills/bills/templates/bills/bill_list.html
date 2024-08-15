@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill List</title>
+</head>
+<body>
+    <h1>List of Bills</h1>
+    <ul>
+        {% for bill in bills %}
+            <li><a href="{% url 'bill_detail' bill.id %}">{{ bill.name }}</a></li>
+        {% empty %}
+            <li>No bills available.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
